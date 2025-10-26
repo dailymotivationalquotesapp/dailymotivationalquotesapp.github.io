@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DailyQuotes – Daily Motivation</title>
+  <meta name="description" content="DailyQuotes is a clean, minimal iOS app that delivers hand‑picked motivational quotes every day. Save favorites, share, and stay inspired." />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="DailyQuotes – Daily Motivation">
+  <meta property="og:description" content="Hand‑picked motivational quotes delivered daily. Save favorites and share easily.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/USER/REPO/main/assets/og-image.png">
+  <meta property="og:url" content="https://USER.github.io/REPO/">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0b0b0c;
+      --muted: #6b7280;
+      --accent: linear-gradient(135deg, #9333ea 0%, #c026d3 50%, #ec4899 100%);
+      --card: #f8fafc;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0c;
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --card: #111214;
+        --border: #1f2937;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1040px; padding: 24px; margin: 0 auto; }
+
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0; position: sticky; top: 0; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .brand { font-weight: 700; font-size: 18px; }
+    .nav a { padding: 8px 12px; border-radius: 12px; }
+    .nav a:hover { background: var(--card); }
+
+    .hero { padding: 64px 0; display: grid; gap: 28px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-weight: 600; }
+    h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.05; margin: 0; letter-spacing: -0.01em; }
+    .lead { font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); margin: 8px 0 0; max-width: 70ch; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    .btn { padding: 14px 18px; border-radius: 14px; border: 1px solid var(--border); background: var(--card); font-weight: 700; }
+    .btn.primary { border: none; background: var(--accent); color: white; box-shadow: 0 8px 32px rgba(147, 51, 234, 0.35); }
+    .btn:hover { transform: translateY(-1px); transition: transform .15s ease; }
+
+    .showcase { margin: 32px 0 0; border-radius: 24px; padding: 2px; background: var(--accent); }
+    .showcase-inner { background: var(--bg); border-radius: 22px; padding: 16px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .footer { margin: 48px 0 20px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; }
+  </style>
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand">DailyQuotes</div>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">✨ Minimal & Focused</span>
+      <h1>Daily motivation—beautifully simple.</h1>
+      <p class="lead">DailyQuotes delivers one carefully picked quote every day. Save your favorites, share in one tap, and stay consistent with clean reminders.</p>
+      <div class="cta">
+        <!-- Replace with your real App Store URL -->
+        <a class="btn primary" href="#" aria-label="Download on the App Store">Download on the App Store</a>
+        <a class="btn" href="#features">Explore Features</a>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-inner grid">
+          <div class="card">
+            <h3>Today’s Quote</h3>
+            <p>Start your day with a fresh, uplifting quote. No distractions.</p>
+          </div>
+          <div class="card">
+            <h3>Favorites & Sharing</h3>
+            <p>Save what resonates and share as clean images or text.</p>
+          </div>
+          <div class="card">
+            <h3>Reminders</h3>
+            <p>Set a daily time to get your quote—build a positive habit.</p>
+          </div>
+          <div class="card">
+            <h3>Offline First</h3>
+            <p>Fast and reliable. Works without an internet connection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container" style="padding: 32px 0;">
+      <h2 style="font-size:28px; margin:0 0 12px;">Features</h2>
+      <ul style="margin: 0; padding-left: 18px; color: var(--muted);">
+        <li>Hand‑picked daily quotes</li>
+        <li>Save, search and share favorites</li>
+        <li>Beautiful, minimal design</li>
+        <li>Local notifications for daily reminders</li>
+        <li>Lightweight and private</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="container" style="padding: 8px 0 0;">
+      <h2 style="font-size:28px; margin:0 0 12px;">FAQ</h2>
+      <details class="card">
+        <summary style="cursor:pointer; font-weight:700;">Does the app collect personal data?</summary>
+        <p>DailyQuotes does not require an account and stores your favorites only on your device. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+      </details>
+      <details class="card">
+        <summary style="cursor:pointer; font-weight:700;">Which devices are supported?</summary>
+        <p>iPhone with iOS 16 or later.</p>
+      </details>
+      <details class="card">
+        <summary style="cursor:pointer; font-weight:700;">How can I contact you?</summary>
+        <p>Email: <a href="mailto:rashad.shirizada@gmail.com">rashad.shirizada@gmail.com</a></p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>•</span>
+        <a href="mailto:rashad.shirizada@gmail.com">Contact</a>
+      </div>
+      <div style="margin-top:8px;">© 2025 DailyQuotes. All rights reserved.</div>
+    </footer>
+  </main>
+</body>
+</html>
